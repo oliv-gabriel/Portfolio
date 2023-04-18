@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,43 +8,45 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<header>
-    <nav>
-        <input type="checkbox" id="toggle">
-        <label for="toggle"><i class="ri-menu-line"></i></label>
-        <div class="menu">
 
-            <ul>
-                <a href="">
-                    <li>
-                        Home
-                    </li>
-                </a>
-                <a href="">
-                    <li>
-                        About
-                    </li>
-                </a>
-                <a href="">
-                    <li>
-                        Skills
-                    </li>
-                </a>
-                <a href="">
-                    <li>
-                        Projects
-                    </li>
-                </a>
-                <a href="">
-                    <li>
-                        Contact
-                    </li>   
-                </a>
-            </ul>
+<body>
+    <header>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
-    </nav>
-</header>
-    
+        <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Skills</a>
+                    </li>
+                    <li>
+                        <a href="">Projects</a>
+                    </li>
+                    <li>
+                        <a href="">Contact </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+
+
 </body>
+
 </html>
