@@ -1,0 +1,33 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    }
+/* TELA */
+body{
+    background-color: #1C1C1C;
+    min-width: 100vh;
+}
+
+.background{
+    width: 200%;
+    height: 100vh;
+    transform: rotate(25.942deg);
+    flex-shrink: 0;
+    color: rgba(44, 44, 46, 0.60);
+    font-family: Orbitron;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position:fixed;
+    -webkit-user-select:none;  
+    -moz-user-select:none;     
+    -ms-user-select:none;      
+    user-select:none;
+    line-height:97%;  
+}
+.vetor1{
+    position: ;
+    background: #8E67ED;
+}
